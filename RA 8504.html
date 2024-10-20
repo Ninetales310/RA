@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9e122c;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 800px;
+            height: 800px;
+        }
+
+        .box {
+            width: 180px;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            color: white;
+            height: 270.39px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0; 
+            transform: translateY(20px); 
+            animation: fadeIn 0.6s forwards; 
+        }
+
+        .circle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #dc2b37;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            animation: pulse 1.5s infinite; 
+        }
+
+        h1 {
+            font-size: 16px;
+            margin-bottom: 10px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 12px; 
+            line-height: 1.4;
+            margin: 5px 0;
+        }
+
+        .box:nth-child(2) {
+            top: 10%;
+            right: 1%;
+            background-color: #b8a597;
+            animation-delay: 0.2s;
+        }
+
+        .box:nth-child(3) {
+            top: 45%;
+            left: 95%;
+            background-color: #b8a597;
+            animation-delay: 0.4s; 
+        }
+
+        .box:nth-child(4) {
+            top: 80%;
+            right: 1%;
+            background-color: #b8a597;
+            animation-delay: 0.6s; 
+        }
+
+        .box:nth-child(5) {
+            top: 10%;
+            left: 1%;
+            background-color: #b8a597;
+            animation-delay: 0.8s;
+        }
+
+        .box:nth-child(6) {
+            top: 45%;
+            right: 95%;
+            background-color: #b8a597;
+            animation-delay: 1s; 
+        }
+
+        .box:nth-child(7) {
+            top: 80%;
+            left: 1%;
+            background-color: #b8a597;
+            animation-delay: 1.2s; 
+        }
+
+        .box:nth-child(8) {
+            top: 25%;
+            left: 1%;
+            background-color: #3F51B5;
+            animation-delay: 1.4s; 
+        }
+
+
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1); 
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.05); 
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+	    <a href="https://www.aidsdatahub.org/resource/ra-8504-philippine-aids-prevention-and-control-act-1998-congress-philippines#:~:text=An%20act%20promulgating%20policies%20and,Council%2C%20and%20for%20other%20purposes.">
+        <div class="circle">REPUBLIC ACT 8504</div></a>
+        <div class="box">
+            <h1>Kalasag Laban sa HIV/AIDS</h1>
+            <p>Ang HIV/AIDS ay isang mabigat na banta sa lipunan. Upang labanan ito, lumikha ang mga mambabatas ng Republic Act 8504, o ang Philippine AIDS Prevention and Control Act of 1998, na magsisilbing proteksyon laban sa sakit na ito.</p>
+        </div>
+        <div class="box">
+            <h1>Nagbibigay-kaalaman:</h1>
+            <p>Pinapakalat nito ang tamang impormasyon tungkol sa HIV/AIDS, para malaman natin kung paano ito naipapasa at kung paano tayo maiiwasan na mahawa.</p>
+        </div>
+        <div class="box">
+            <h1>Nagbibigay ng proteksyon:</h1>
+            <p>Pinoprotektahan nito ang mga taong may HIV/AIDS laban sa diskriminasyon at panghuhusga.</p>
+        </div>
+        <div class="box">
+            <h1>Kalusugan ng Lahat:</h1>
+            <p>Ang HIV/AIDS ay isang suliranin ng buong lipunan, hindi lamang ng iilan. Mahalagang magkaisa tayo upang sama-samang labanan at puksain ang banta ng sakit na ito.</p>
+        </div>
+        <div class="box">
+            <h1>Karapatang Pantao:</h1>
+            <p>Ang batas na ito ay nagpapakita ng ating malasakit sa karapatang pantao, lalo na sa mga may HIV/AIDS, at itinataguyod ang pagkakapantay-pantay at paggalang sa dignidad ng bawat tao.</p>
+        </div>
+        <div class="box">
+            <h1>Mas Magandang Kinabukasan:</h1>
+            <p>Sa pagpapatupad ng batas na ito, nililikha natin ang daan patungo sa isang mas maliwanag na kinabukasan kung saan ang HIV/AIDS ay hindi na banta. Sama-sama tayong magtutulungan para sa mas malusog at ligtas na lipunan.</p>
+        </div>
+    </div>
+
+</body>
+</html>
